@@ -16,7 +16,7 @@ app.use(
 app.use(morgan("combined"));
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "..", "public", "build")));
+app.use(express.static(path.join(__dirname, "..", "..", "client", "build")));
 
 app.use("/planets", planetsRouter);
 app.use("/launches", launchesRouter);
