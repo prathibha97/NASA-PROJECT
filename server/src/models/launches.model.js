@@ -70,8 +70,6 @@ async function loadLaunchesData() {
   }
 }
 
-launches.set(launch.flightNumber, launch);
-
 async function findLaunch(filter) {
   return await launchesDatabase.findOne(filter);
 }

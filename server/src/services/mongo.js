@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGO_URI = "mongodb://localhost:27017/nasa";
+const MONGO_URI = "mongodb+srv://nasa-api:VWKYTXUeSnFxdTSc@nasacluster.2ycexic.mongodb.net/nasa";
 
 mongoose.connection.once("open", () => {
   console.log("Connected to MongoDB");
@@ -20,4 +20,3 @@ async function mongoDisconnect() {
 
 module.exports = { mongoConnect, mongoDisconnect };
 
-// mongodb+srv://nasa-api:VWKYTXUeSnFxdTSc@nasacluster.2ycexic.mongodb.net/nasa
